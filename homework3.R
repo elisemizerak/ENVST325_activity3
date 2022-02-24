@@ -110,4 +110,6 @@ ggplot(data = coal_countries,
   geom_line() +
   labs(x = "Year", y = "Coal Emissions by Country (tons CO2)",
        title = "Change in Coal Emissions from 1750-Present Day") +
-  theme_classic() 
+  theme_classic()  +
+  scale_color_manual(values = c("#800080", "#FF0000", "#000000", "#FFA500", 
+                                "#FFFF00", "#87CEEB", "#0000CD")) 
