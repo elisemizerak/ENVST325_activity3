@@ -47,7 +47,14 @@ colnames(datCO2)[4] <- "CO2"
 
 
 
-ggplot(data = NorthAmerica,
-       aes(x = Year, y = CO2))
+ggplot(data = NorthAmerica, # data for plot
+       aes(x = Year, y=CO2, color=Entity ) )+ # aes, x and y
+  geom_point()+ # make points at data point
+  geom_line()+ # use lines to connect data points
+  labs(x="Year", y="US fossil fuel emissions (tons CO2)")+ # make axis labels
+  theme_classic() +
+  xaxt() = "n"
+
+
 
 
